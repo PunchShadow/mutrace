@@ -1,5 +1,28 @@
 MUTRACE Mutex Tracer
 
+Preliminary:
+        * Building libraries:
+        $ sudo apt install libtool m4 automake
+        $ sudo apt install binutils-dev zlib1g-dev libcurl4-gnutls-dev
+        $ sudo apt install libbfd-dev
+
+Configure, Build and Install:
+        * Configure:
+        $ ./configure
+        * Make and install:
+        $ make && sudo make install
+Usage:
+        * Setting up LD_PRELOAD env variable to path of .so file
+                * For mutrace: 
+                $ export LD_PRELOAD=/usr/local/lib/libmutrace.so
+                * For matrace:
+                $ export LD_PRELOAD=/usr/local/lib/libmatrace.so
+        * Running the applications
+        # Help
+        $ mutrace -h
+        # Run
+        $ mutrace [options] [application] [argruments]
+
 GIT:
         git://git.0pointer.de/mutrace.git
 
