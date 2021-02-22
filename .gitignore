@@ -27,3 +27,4 @@ install-sh
 mutrace
 matrace
 *~
+*.swp
